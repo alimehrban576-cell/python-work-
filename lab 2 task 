@@ -1,0 +1,132 @@
+Write a Python program that asks the user to enter the number of hours worked and the hourly rate. Calculate the total pay according to the following rules:
+
+If the employee works 40 hours or less, calculate pay as hours rate.
+
+If the employee works more than 40 hours, calculate the first 40 hours at the normal rate
+
+and the overtime hours at 1.5 times the hourly rate.
+
+Display the total pay.
+
+program 
+hours = float(input("Enter hours worked: "))
+rate = float(input("Enter hourly rate: "))
+
+if hours <= 40:
+    total_pay = hours * rate
+else:
+    normal_pay = 40 * rate
+    overtime_hours = hours - 40
+    overtime_pay = overtime_hours * rate * 1.5
+    total_pay = normal_pay + overtime_pay
+
+print("Total Pay =", total_pay)
+
+Question No2
+
+Write a Python program to create an advanced student marksheet. The program should:
+
+1. Ask the user to enter the student's name and roll number.
+
+
+2. Input marks for 5 subjects.
+
+
+3. Calculate the total marks and percentage.
+
+
+4. Determine the grade according to:
+
+
+
+80-100% A+
+
+70-79%A 60-69% B
+
+50-59% C
+
+40-49%- D
+
+Below 40% F
+
+5. Check whether the student passed or failed.
+
+
+6. If the student scores below 40 in any subject, declare the student a Fail regardless of the
+         SOLUTION 
+1=
+name = input("Enter student's name: ")
+roll_no = input("Enter roll number: ")
+2=
+print("\nEnter marks for 5 subjects:")
+
+subject1 = float(input("Subject 1: "))
+subject2 = float(input("Subject 2: "))
+subject3 = float(input("Subject 3: "))
+subject4 = float(input("Subject 4: "))
+subject5 = float(input("Subject 5: "))
+3=
+total = subject1 + subject2 + subject3 + subject4 + subject5
+percentage = total / 5
+
+4=
+if percentage >= 80:
+    grade = "A+"
+elif percentage >= 70:
+    grade = "A"
+elif percentage >= 60:
+    grade = "B"
+elif percentage >= 50:
+    grade = "C"
+elif percentage >= 40:
+    grade = "D"
+else:
+    grade = "F"
+5=
+if (subject1 < 40 or subject2 < 40 or subject3 < 40 or
+    subject4 < 40 or subject5 < 40):
+    result = "Fail"
+else:
+    result = "Pass"
+6=
+print("\n== STUDENT MARKSHEET ==")
+print("Name       :", name)
+print("Roll No.   :", roll_no)
+print("-----")
+print("Subject 1  :", subject1)
+print("Subject 2  :", subject2)
+print("Subject 3  :", subject3)
+print("Subject 4  :", subject4)
+print("Subject 5  :", subject5)
+print("---")
+print("Total      :", total, "/ 500")
+print("Percentage :", percentage, "%")
+print("Grade      :", grade)
+print("Result     :", result)
+print("=======")
+
+output=
+Enter student's name: Ali
+Enter roll number: 101
+
+Enter marks for 5 subjects:
+Subject 1: 85
+Subject 2: 78
+Subject 3: 90
+Subject 4: 72
+Subject 5: 80
+
+== STUDENT MARKSHEET ==
+Name       : Ali
+Roll No.   : 101
+-----
+Subject 1  : 85
+Subject 2  : 78
+Subject 3  : 90
+Subject 4  : 72
+Subject 5  : 80
+----
+Total      : 405.0 / 500
+Percentage : 81.0 %
+Grade      : A+
+Result     : Pass
