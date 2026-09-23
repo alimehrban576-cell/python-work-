@@ -1,0 +1,125 @@
+Question 1:
+program 
+
+total = 0
+
+for i in range(1, 6):
+    marks = float(input(f"Enter marks of subject {i}: "))
+    total += marks
+
+percentage = total / 5
+
+if percentage >= 80:
+    grade = "A+"
+elif percentage >= 70:
+    grade = "A"
+elif percentage >= 60:
+    grade = "B"
+elif percentage >= 50:
+    grade = "C"
+elif percentage >= 40:
+    grade = "D"
+else:
+    grade = "F"
+
+if percentage >= 40:
+    result = "Pass"
+else:
+    result = "Fail"
+
+print("Total Marks:", total)
+print("Percentage:", percentage, "%")
+print("Grade:", grade)
+print("Result:", result)
+
+
+
+Question 2:
+program 
+
+name = input("Enter student's name: ")
+
+print("Uppercase:", name.upper())
+print("Lowercase:", name.lower())
+print("Number of characters:", len(name))
+print("First character:", name[0])
+print("Last character:", name[-1])
+
+Question 3:
+program 
+
+numbers = []
+even = 0
+odd = 0
+
+for i in range(1, 11):
+    num = int(input(f"Enter number {i}: "))
+    numbers.append(num)
+
+    if num % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+
+total = sum(numbers)
+average = total / 10
+largest = max(numbers)
+smallest = min(numbers)
+
+print("Sum:", total)
+print("Average:", average)
+print("Largest number:", largest)
+print("Smallest number:", smallest)
+print("Even numbers:", even)
+print("Odd numbers:", odd)
+
+Question 4:
+program 
+
+balance = 50000
+
+while True:
+    print("\n......ATM.....")
+    print("1. Check Balance")
+    print("2. Deposit")
+    print("3. Withdraw")
+    print("4. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        print("Your balance is:", balance)
+
+    elif choice == 2:
+        amount = float(input("Enter deposit amount: "))
+        balance += amount
+        print("Deposit successful.")
+        print("New balance:", balance)
+
+    elif choice == 3:
+        amount = float(input("Enter withdrawal amount: "))
+
+        if amount <= balance:
+            balance -= amount
+            print("Withdrawal successful.")
+            print("Remaining balance:", balance)
+        else:
+            print("Insufficient balance.")
+
+    elif choice == 4:
+        print("Thank you for using the ATM.")
+        break
+
+    else:
+        print("Invalid choice.")
+
+Question 5:
+program 
+
+n = int(input("Enter n: "))
+
+for i in range(1, n + 1):
+    print("\nTable of", i)
+
+    for j in range(1, 11):
+        print(i, "x", j, "=", i * j)
