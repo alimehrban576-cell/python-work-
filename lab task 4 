@@ -1,0 +1,51 @@
+Question no 1:
+Program 
+
+my_list = [3, 1, 0, 9, 5, 2, 6, 4, 9, 8, 7]
+
+smallest = my_list[0]
+
+for num in my_list:
+    if num < smallest:
+        smallest = num
+
+print("Smallest number:", smallest)
+
+Question no 2 :
+Program 
+
+my_list = [3, 1, 0, 9, 5, 2, 6, 4, 9, 8, 7]
+
+total = 0
+
+for num in my_list:
+    total = total + num
+
+average = total / len(my_list)
+
+print("Average:", average)
+
+Question 3:
+Program 
+
+students = ["Ali", "Ahmed", "Sara", "Ayesha", "Bilal"]
+
+name = input("Enter student name: ")
+
+if name in students:
+    print("Student Found")
+else:
+    print("Student Not Found")
+
+Question 4:
+Program 
+
+shopping = []
+
+for i in range(5):
+    item = input("Enter shopping item: ")
+    shopping.append(item)
+
+print("Shopping List:", shopping)
+
+
