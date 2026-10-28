@@ -1,0 +1,68 @@
+Question 1
+
+fruits = {"Apple", "Banana", "Mango", "Orange", "Grapes"}
+
+print(fruits)
+
+question 2
+
+numbers = [2, 4, 2, 6, 4, 8, 8]
+
+result = set(numbers)
+
+print(result)
+
+Question 3
+
+numbers = {1, 2, 3, 4, 5}
+
+numbers.add(10)
+numbers.remove(3)
+
+print(numbers)
+
+Question 4
+
+numbers = {10, 20, 30, 40, 50}
+
+num = int(input("Enter a number: "))
+
+if num in numbers:
+    print("Number exists in the set")
+else:
+    print("Number does not exist in the set")
+
+Question 5
+
+values = [1, 2, 2, 3, 3, 3, 4]
+
+result = set(values)
+
+print(result)
+print("Length:", len(result))
+
+Question 6
+union program 
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
+print(A | B)
+
+intersection program 
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
+print(A & B)
+
+difference program 
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
+print("A - B:", A - B)
+print("B - A:", B - A)
+
+symmetric program 
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
+print(A ^ B)
