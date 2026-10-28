@@ -1,2 +1,2 @@
-# python Lab 2 work 
-#Python lab taks 3
+All lab tasks from one to onwards.
+Name Mehrban.
