@@ -1,0 +1,67 @@
+Question 1
+program.
+
+def factorial(n):
+    fact = 1
+    for i in range(1, n + 1):
+        fact = fact * i
+    return fact
+
+num = int(input("Enter a number: "))
+print("Factorial =", factorial(num))
+
+Question 2
+
+def student(name, age, roll_no):
+    print("Name:", name)
+    print("Age:", age)
+    print("Roll No:", roll_no)
+
+student(name="Ali", age=21, roll_no=101)
+
+Question 3
+
+def total(*args):
+    sum = 0
+    for i in args:
+        sum = sum + i
+    return sum
+
+print("Sum =", total(10, 20, 30, 40))
+
+Question 4
+
+def employee(**kwargs):
+    for key, value in kwargs.items():
+        print(key, ":", value)
+
+employee(name="Ahmed", age=25, salary=50000, city="Karachi")
+
+Question 5
+
+def check_password(password):
+
+    if len(password) < 8:
+        return False
+
+    if not any(c.isupper() for c in password):
+        return False
+
+    if not any(c.islower() for c in password):
+        return False
+
+    if not any(c.isdigit() for c in password):
+        return False
+
+    if not any(not c.isalnum() for c in password):
+        return False
+
+    return True
+
+
+password = input("Enter password: ")
+
+if check_password(password):
+    print("Valid Password")
+else:
+    print("Invalid Password")
