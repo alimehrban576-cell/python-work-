@@ -1,0 +1,92 @@
+Question 1
+
+class Car:
+    def __init__(self, brand, color):
+        self.brand = brand
+        self.color = color
+
+    def start(self):
+        print("The car is starting.")
+
+# Create object
+car1 = Car("Toyota", "Black")
+
+print(car1.brand)
+print(car1.color)
+car1.start()
+
+Question 2
+
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+
+    def display_info(self):
+        print("Title:", self.title)
+        print("Author:", self.author)
+
+# Create three objects
+book1 = Book("Python", "Ali")
+book2 = Book("Java", "Ahmed")
+book3 = Book("AI", "Sara")
+
+book1.display_info()
+book2.display_info()
+book3.display_info()
+
+Question 3
+
+class Calculator:
+    def __init__(self, num1, num2):
+        self.num1 = num1
+        self.num2 = num2
+
+    def addition(self):
+        print("Addition:", self.num1 + self.num2)
+
+    def subtraction(self):
+        print("Subtraction:", self.num1 - self.num2)
+
+    def multiplication(self):
+        print("Multiplication:", self.num1 * self.num2)
+
+    def division(self):
+        print("Division:", self.num1 / self.num2)
+
+# Create object
+c1 = Calculator(20, 10)
+
+c1.addition()
+c1.subtraction()
+c1.multiplication()
+c1.division()
+
+Question 4
+
+class BankAccount:
+    def __init__(self, account_holder, balance):
+        self.account_holder = account_holder
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print("Deposited:", amount)
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+            print("Withdrawn:", amount)
+        else:
+            print("Insufficient balance!")
+
+    def display_balance(self):
+        print("Account Holder:", self.account_holder)
+        print("Balance:", self.balance)
+
+# Create object
+account1 = BankAccount("Ali", 5000)
+
+account1.deposit(2000)
+account1.withdraw(1000)
+account1.display_balance()
